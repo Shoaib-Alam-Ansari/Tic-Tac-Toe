@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #377799;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container h1{
+  color:#000000;
+  text-align: center;
+}
+
+#tic_toc_game{
+  height: 100vh;
+  width: 100vw;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25rem;
+  height: 19rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.box {
+  height: 6rem;
+  width: 6rem;
+  font-size: 30px;
+  border: none;
+  background-color: #dddbeb;
+  border-radius: 10px;
+  color: #000;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.reset {
+    padding: 0.3rem 0;
+  width: 8rem;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #dddbeb;
+  color: #000000;
+}
+
+.winner_container{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+
+.msg{
+    font-size: 30px;
+    color: #000000;
+}
+.hide{
+    display: none;
+}
+
+.newGame{
+    height: 2.5rem;
+  width: 10rem;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #dddbeb;
+  color: #000000;
+}
+
+.player_o{
+  padding: 7px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #dddbeb;
+  color: #000000;
+
+}
+.player_x{
+  padding: 7px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #dddbeb;
+  color: #000000;
+
+}
+
+.playerT{
+  display: flex;
+  gap: 4rem;
+}
+.player{
+  display: flex;
+  gap: 5px;
+}
+
+.indicator_o{
+  border: 1px solid #000000;
+}
+.indicator_x{
+  display: none;
+  border: 1px solid #000000;
+}
+
+.box:hover{
+  transition: 0.5s;
+  filter: drop-shadow(0 0 5px #ff0088) drop-shadow(0 0 40px #ff0088)
+  contrast(1.8) brightness(1.8);
+  border: 3px solid#ff0088;
+}
